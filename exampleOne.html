@@ -1,18 +1,48 @@
-<head>
-	<style>
-		.blue {
-			color = “blue”;
-  }
-	</style>
-/*<script>
-		function myFunction() {
-document.getElementById("change").innerHTML = "Paragraph changed.";
-}
-</script>*/
-</head>
-<body>
-	<div class=”blue”>
-		<h1>This is HTML</h1>
-		<p id=”change”>The page is divided into sections and each tag is displayed differently</p>
-	</div>
-</body>
+<!DOCTYPE html><!-- Say what kind of document this is-->
+<!-- The html tag tells the browser where to start and where to start
+		 reading the html. This is where you can set the language. -->
+<html lang="en" dir="ltr">
+<!--The head tag has information that the browser uses to display the
+ 		content you'll have in the HTML portion of your code-->
+	<head>
+		<!--This first tag sets the character encoding.
+				UTF-8 is a type of Unicode encoding used in virtually
+				all websites around the world. We need encoding because
+				we need to translate the letters, numbers, and symbols that
+				we use into bytes used by computers. -->
+		<meta charset="utf-8">
+		<!--The viewport tag is what makes sure a website is viewable on
+				all devices. The content in this tag is saying that it should
+				make the width of the website the same width as whatever the
+				device is that is viewing it. And the scale attribute sets the
+				zoom of the website, which we want to be 100% by default-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The title tag is what shows in your browser tab. -->
+		<title>Basic Website Example</title>
+		<!-- The style tag is where we will put all of our CSS to style our code -->
+		<style>
+			/*CSS uses different syntax, so comments are defined differently inside
+			of the style tags*/
+			
+			/* Since "blue" is a class, CSS syntax uses a . in front of the selector. 
+			   The browser compiles your code and sees anywhere this class occurs and 
+			   updates the properties of that text with what we put in this box. 
+			*/
+			
+			.blue {
+				color: blue;/* we are setting the color of the text to the default system blue */
+			}
+		</style>
+	</head>
+	<!-- The body tag is where we put the actual content that is displayed on the webpage. -->
+	<body>
+		<!-- We are sectioning off a portion of the code and marking it to be displayed under 
+			the properties we've set for the "blue" class-->
+		<div class="blue">
+			<h1>This is HTML</h1>
+			<p>The page is divided into sections and each tag is displayed differently. This tag is blue.</p>
+		</div>
+		<!-- Because this is outside of the div tag, this text will display as the default paragraph values -->
+		<p>This text isn't blue</p>
+	</body>
+</html>
