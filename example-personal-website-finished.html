@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Personal Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+		margin-bottom: 0;
+		border-radius: 0;
+    }
+/*	  This is what gives you a big image in the background at the top of the page*/
+	.jumbotron {
+		background-image: url(https://thehappypuppysite.com/wp-content/uploads/2017/10/goldie.jpg);
+		background-size: cover;
+		height: 80vh;
+
+	}
+    .row.content {
+		height: auto;
+		padding-bottom: 5vh;
+		/* adding padding means that there is some negative space between elements on the page- good for separating content and making it easy to read. 
+		vh is a unit of measurement that is based on the height of the user's browser so the content is scaled to the size of the screen.   */
+	  }
+	  #about-img {
+		  max-height: 40vh;/* make sure it never gets too big*/
+		  overflow: hidden;/* In this case, I want to hide the overflow that doesn't fit in the size height I'm defining*/
+	  }
+	      /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand"><strong>Allison Robbins</strong></a></div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+		<li><a href="#resume">Resume</a></li>
+		<li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron" id="home">	
+</div>
+<div class="container-fluid text-center" id="about">    
+  <div class="row content">
+	  <h1>About Me</h1>
+  </div>
+  <div class="row content">
+	 <div class="col-lg-1 col-sm-1">
+	 </div>
+	  <div class="col-lg-4 col-sm-2" id="about-img">
+		  <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/golden-retriever-puppy-portrait-doug-mclaughlin.jpg"  class="img-responsive" id="small_img"/>
+	 </div>
+	 <div class="col-lg-6 col-sm-8 text-left"> 
+		<p>Student at George Washington University.</p>
+		<p>Pursuing a Bachelor of Art degree in Computer Science with minors in Fine Art and Graphic Design. Graduating May 2021.</p>
+	  </div>
+	  <div class="col-lg-1 col-sm-1"></div>
+	</div>
+</div>
+<div class="container-fluid text-center" id="skills">
+	<div class="row content">
+		<h1>Skills</h1>
+	</div>
+	</div>
+	<div class="row content">
+	 <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+		 <h3>Web Development</h3>
+		 <p>HTML, CSS, Javascript</p>
+	  </div>
+	 <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+		 <h3>Software Engineering</h3>
+		 <p>Java, C, C++, Python, Assembly Language, Kotlin, Another language, etc. </p>
+	  </div>
+		<div class="col-lg-4 col-md-4 col-sm-12 text-center">
+		 <h3>Data Visualization</h3>
+		 <p>I made a graph once</p>
+	  </div>
+	</div>
+	
+<footer class="container-fluid text-center">
+</footer>
+
+</body>
+</html>
